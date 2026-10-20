@@ -1,0 +1,21 @@
+# ===== 工具链（绝不能提交，13000+ 文件）=====
+MingW/
+
+# ===== 编译产物 =====
+*.exe
+*.o
+*.obj
+*.out
+*.a
+*.dll
+
+# ===== 日志与临时文件 =====
+*.log
+*.tmp
+*.bak
+*.stackdump
+
+# ===== 系统/编辑器杂项 =====
+Thumbs.db
+desktop.ini
+.DS_Store

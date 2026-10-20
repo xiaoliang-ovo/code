@@ -1,0 +1,49 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C++: g++ 生成活动文件",
+			"command": "D:\\code\\MingW\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"-Wall",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}",
+				"env": {
+					"PATH": "D:\\code\\MingW\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin;${env:PATH}"
+				}
+			},
+			"problemMatcher": ["$gcc"],
+			"group": { "kind": "build", "isDefault": true },
+			"detail": "C++ 编译器: mingw64 g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C: gcc 生成活动文件",
+			"command": "D:\\code\\MingW\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"-Wall",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}",
+				"env": {
+					"PATH": "D:\\code\\MingW\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin;${env:PATH}"
+				}
+			},
+			"problemMatcher": ["$gcc"],
+			"group": "build",
+			"detail": "C 编译器: mingw64 gcc.exe"
+		}
+	]
+}
